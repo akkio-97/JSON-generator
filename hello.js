@@ -1,12 +1,9 @@
-
 var s;
 var fs = require('fs');
 
 fs.readFile('here.js', 'utf8', function(err, data) {  
     if (err) throw err;
     s= data;
-    console.log(s);
-
 
     var followers, profile, arr;
     arr= s.split('**followers');
